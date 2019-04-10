@@ -10,3 +10,11 @@ def isIPv4Address(inputString):
 def isIPv4Address(inputString):
     numbers = inputString.split('.')
     return len(numbers) == 4 and all(number.isdigit() and 0 <= int(number) <= 255 for number in numbers)
+======================================
+from ipaddress import ip_address as ip
+
+def isIPv4Address(inputString):
+    try: ip(inputString)
+    except: return False
+    return True
+
