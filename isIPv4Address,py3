@@ -6,3 +6,7 @@ def isIPv4Address(inputString):
         if int(number) not in range(256):
             return False
     return True
+===============================
+def isIPv4Address(inputString):
+    numbers = inputString.split('.')
+    return len(numbers) == 4 and all(number.isdigit() and 0 <= int(number) <= 255 for number in numbers)
