@@ -4,3 +4,6 @@ def variableName(name):
         if not c.isalnum() and not c == '_':
             return False
     return True
+=======================
+def variableName(name):
+    return name.isidentifier()
