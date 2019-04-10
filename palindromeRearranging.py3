@@ -7,3 +7,6 @@ def palindromeRearranging(inputString):
             if flag > 1:
                 return False
     return True
+=======================================
+def palindromeRearranging(inputString):
+    return sum(inputString.count(x) % 2 for x in set(inputString)) <= 1
