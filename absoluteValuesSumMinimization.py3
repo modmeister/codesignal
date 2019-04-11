@@ -7,3 +7,6 @@ def absoluteValuesSumMinimization(a):
             index = i
             smallest = total
     return a[index]
+=====================================
+def absoluteValuesSumMinimization(a):
+    return a[(len(a) - 1) // 2]
