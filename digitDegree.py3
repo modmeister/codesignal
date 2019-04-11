@@ -9,3 +9,10 @@ def digitDegree(n):
         s = sum(int(d) for d in n)
         c += 1
     return c
+===================
+def digitDegree(n):
+    c = 0
+    while (n >= 10):
+        n = sum(int(d) for d in str(n))
+        c += 1
+    return c
