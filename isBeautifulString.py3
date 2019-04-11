@@ -11,3 +11,7 @@ def isBeautifulString(inputString):
         if inputString.count(s[i]) > inputString.count(s[i-1]):
             return False
     return True
+===================================
+def isBeautifulString(inputString):
+    result = [inputString.count(c) for c in string.ascii_lowercase]
+    return result[::-1] == sorted(result)
